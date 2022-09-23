@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+html {
+  /*background-color: #5f45bb;
+    background-image: linear-gradient(to bottom right, #180cac, #d054e4);*/
+  background: no-repeat linear-gradient(45deg, #ff4800, #ffb600);
+  font-family: "Shadows Into Light", cursive;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  color: #006466;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.child__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+}
+.title{
+    font-size: 2.618rem;
+
+}
+.container-div{
+    height: 50%;
+    margin-bottom: 1rem;
+}
+.buttons{
+    display: inline-flex;
+    position: absolute;
+    bottom: 10%;
+    gap: 1rem;
+}
+.button{
+    border: 1px solid black;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.47);
+}
+.hide{
+    display: none;
+}
+
+.button:hover{
+    border: 1px solid #006466;
+    transform: translate(0px, -.31rem);
+    transition: all .2s ease-in-out;
+    padding: 0.2rem 1rem;
+}
+
+.target{
+    font-size: 2.3em;
+}
+
+@media only screen and (max-width: 768px){
+    #container-div{
+        padding: 0;
+        top: 11%;
+        width: 67%;
+    }
+    .container-div{
+
+        font-size: 1rem;
+    }
+    .child__container{
+        width: 90%;
+        margin: auto;
+    }
+}
